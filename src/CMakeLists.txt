@@ -3,7 +3,6 @@ project(MainApp)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED 17)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O3")
 
 add_subdirectory(myLib)
 set(SOURCE_FILES main.cpp)
