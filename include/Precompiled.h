@@ -2,5 +2,5 @@
 
 #include <iostream>
 #include <algorithm>
-#include "HelperFunctions.h"
-#include "Performance.h"
+#include "details/HelperFunctions.h"
+#include "details/Performance.h"
