@@ -59,7 +59,7 @@ public:
     typedef const char* const_iterator;
 
     template <std::size_t N>
-    CONSTEXPR11_TN static_string(const char(&a)[N]) NOEXCEPT_TN
+    CONSTEXPR11_TN explicit static_string(const char(&a)[N]) NOEXCEPT_TN
         : p_(a)
         , sz_(N-1)
         {}

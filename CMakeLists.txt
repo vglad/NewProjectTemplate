@@ -1,8 +1,7 @@
-cmake_minimum_required (VERSION 3.11)
+cmake_minimum_required (VERSION 3.5)
 project(NewProjectTemplate)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED 17)
-
+add_subdirectory(thirdparty/catch2)
+add_subdirectory(src/lib)
 add_subdirectory(src)
 add_subdirectory(tests)
