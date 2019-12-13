@@ -1,1 +1,5 @@
-#pragma once
+#ifndef PROJECT_INCLUDE_LIB_LIB_HPP
+#define PROJECT_INCLUDE_LIB_LIB_HPP
+
+
+#endif //PROJECT_INCLUDE_LIB_LIB_HPP

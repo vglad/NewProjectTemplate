@@ -1,8 +1,6 @@
-#pragma once
+#ifndef PROJECT_INCLUDE_DETAIL_PRECOMPILED_HPP
+#define PROJECT_INCLUDE_DETAIL_PRECOMPILED_HPP
 
-#include <iostream>
-#include <algorithm>
-#include <string>
+#include "Utils.hpp"
 
-#include "HelperFunctions.hpp"
-#include "Performance.hpp"
+#endif //PROJECT_INCLUDE_DETAIL_PRECOMPILED_HPP
