@@ -12,7 +12,7 @@ int main() {
     std::cout << l.addition(1, 41) << '\n';
     l.generate_throw();
   }
-  catch (std::exception const & e) {
+  catch (std::exception const &) {
      print_nested_exception();
   }
   return 0;
