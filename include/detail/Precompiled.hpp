@@ -1,6 +1,7 @@
 #ifndef PROJECT_INCLUDE_DETAIL_PRECOMPILED_HPP
 #define PROJECT_INCLUDE_DETAIL_PRECOMPILED_HPP
 
-#include "Utils.hpp"
+#include "ErrHandler.hpp"
+#include "StringUtils.hpp"
 
 #endif //PROJECT_INCLUDE_DETAIL_PRECOMPILED_HPP

@@ -1,10 +1,19 @@
 #include "Precompiled.hpp"
+#include "lib.hpp"
 
 #include <iostream>
 
+using namespace library;
+using namespace detail;
+
 int main() {
-    std::cout << "Hello, World!\n";
-    auto i = int64_t {42};
-    std::cout << i << "\n";
-    return 0;
+  try {
+    auto l = lib{};
+    std::cout << l.addition(1, 41) << '\n';
+    l.generate_throw();
+  }
+  catch (std::exception const & e) {
+     print_nested_exception();
+  }
+  return 0;
 }
