@@ -1,6 +1,10 @@
 #ifndef PROJECT_INCLUDE_DETAIL_PRECOMPILED_HPP
 #define PROJECT_INCLUDE_DETAIL_PRECOMPILED_HPP
 
+#ifndef RUNNING_WINDOWS
+#define WIN32_LEAN_AND_MEAN
+#endif // !RUNNING_WINDOWS
+
 #include "ErrHandler.hpp"
 #include "StringUtils.hpp"
 
