@@ -5,7 +5,7 @@
 #  define WIN32_LEAN_AND_MEAN
 #elif __linux__
 #else
-#endif // !_WIN32
+#endif
 
 #include "ErrHandler.hpp"
 #include "StringUtils.hpp"
