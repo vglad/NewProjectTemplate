@@ -1,16 +1,14 @@
 #!/bin/bash
 
-# Enable GCC 9.1.1
-source scl_source enable gcc-toolset-9
+cd ${PROJECT_DIR} || return 1
+BUILD_DIR=${PROJECT_DIR}/build/release
 
-RELEASE_BUILD_DIR=/root/build/release
-
-if [ ! -d "$RELEASE_BUILD_DIR" ]; then
-  mkdir -p $RELEASE_BUILD_DIR
+if [ ! -d "${BUILD_DIR}" ]; then
+  mkdir -p ${BUILD_DIR}
 fi
 
-cd $RELEASE_BUILD_DIR || exit
-cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../..
+cd ${BUILD_DIR} || return 1
+cmake -DCMAKE_BUILD_TYPE=Release ../..
 make
 
-$RELEASE_BUILD_DIR/tests/allTests
+${BUILD_DIR}/tests/allTests
