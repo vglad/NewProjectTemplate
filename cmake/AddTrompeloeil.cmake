@@ -3,7 +3,7 @@ message(STATUS "Checking Trompeloeil dependency ...")
 set(trompeloeil_include_dir ${CMAKE_CURRENT_SOURCE_DIR}/../ext)
 
 if (NOT SKIP_TROMPELOEIL_DOWNLOAD)
-  set(trompeloeil_version "37")
+  set(trompeloeil_version "43")
   set(trompeloeil_headers "${trompeloeil_include_dir}/trompeloeil.hpp"
       "${trompeloeil_include_dir}/catch2/trompeloeil.hpp"
       )
@@ -18,7 +18,7 @@ if (NOT SKIP_TROMPELOEIL_DOWNLOAD)
   if(${download_msg})
     message(STATUS "  Downloading Trompeloeil ...")
     set(trompeloeil_temp_dir ${trompeloeil_include_dir}/trompeloeil_tar_temp)
-    set(tar_url https://github.com/rollbear/trompeloeil/archive/${trompeloeil_version}.tar.gz)
+    set(tar_url https://github.com/rollbear/trompeloeil/archive/v${trompeloeil_version}.tar.gz)
     set(tar_file ${trompeloeil_temp_dir}/trompeloeil-${trompeloeil_version}.tar.gz)
 
     file(DOWNLOAD ${tar_url} ${tar_file} INACTIVITY_TIMEOUT 10 STATUS status LOG log)
