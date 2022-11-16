@@ -3,7 +3,7 @@ message(STATUS "Checking Catch2 dependency ...")
 set(catch2_include_dir ${CMAKE_CURRENT_SOURCE_DIR}/../ext/catch2)
 
 if (NOT SKIP_CATCH2_DOWNLOAD)
-  set(catch2_version "v2.11.3")
+  set(catch2_version "v2.13.10")
   set(catch2_header "${CMAKE_CURRENT_SOURCE_DIR}/../ext/catch2/catch.hpp")
 
   if (NOT EXISTS ${catch2_header})
